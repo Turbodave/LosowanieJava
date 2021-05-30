@@ -17,14 +17,14 @@ public class LosowanieJava {
         int ocenaLiczba = Integer.parseInt(wybor);
         switch (ocenaLiczba) {
             case 1:
-                System.out.println("Liczby na lotto");
+                //System.out.println("Liczby na lotto losowane");
                 final int NUMERY = 6;
                 int[] numery = new int[NUMERY];
                 LinkedList m = new LinkedList();
                 Random generator = new Random();
 
                 for (int i = 0; i < NUMERY; i++) {
-                    m.add(generator.nextInt(49));
+                    m.add(generator.nextInt(48)+1);
                 }
                 System.out.println("liczby na lotto to: " +m);
                 break;
@@ -37,7 +37,7 @@ public class LosowanieJava {
                 Random generator2 = new Random();
 
                 for (int i =0;i<NUMERYJACKPOT;i++){
-                    mjack.add(generator2.nextInt(48));
+                    mjack.add(generator2.nextInt(47)+1);
                 }
 
                 final int NUMERYJACKPOTdwa = 2;
@@ -46,9 +46,9 @@ public class LosowanieJava {
                 Random generatorjackpotdwa = new Random();
 
                 for (int i =0;i<NUMERYJACKPOTdwa;i++){
-                    mjack2.add(generatorjackpotdwa.nextInt(10));
+                    mjack2.add(generatorjackpotdwa.nextInt(9)+1);
                 }
-                System.out.println("pięć liczb eurojackpot "+ mjack +" dwie ostatnie " + mjack2);
+                System.out.println("pięć liczb eurojackpot "+ mjack +" dwie ostatnie liczby " + mjack2);
 
 
                 //jackpot end
