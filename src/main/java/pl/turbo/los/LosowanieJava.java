@@ -1,4 +1,4 @@
-package Los.turbo.pl;
+package pl.turbo.los;
 
 import java.util.LinkedList;
 import java.util.Random;
