@@ -11,11 +11,11 @@ public class LosowanieJava {
 
         System.out.println("Wybierz jakie losownie wybrać 1 lotto.");
         System.out.println("Wybierz jakie losownie wybrać 2 eurojackpot.");
-        String wybor = scan.nextLine();
+        String choice = scan.nextLine();
 
 
-        int ocenaLiczba = Integer.parseInt(wybor);
-        switch (ocenaLiczba) {
+        int choiceNumber = Integer.parseInt(choice);
+        switch (choiceNumber) {
             case 1:
                 //System.out.println("Liczby na lotto losowane");
                 final int NUMERY = 6;
